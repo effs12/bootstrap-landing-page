@@ -1,0 +1,360 @@
+body {
+  padding-top: 65px;
+}
+
+.header {
+  color: #020202;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  height: 60px;
+  width: 60px;
+  font-size: .71875rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+.navbar .navbar-toggler .icon-bar {
+  background-color: #020202;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 6px;
+  position: relative;
+  border-radius: 25%;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(1) {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(3) {
+  top: -12px;
+  transform: rotate(-45deg);
+}
+
+.navbar .navbar-toggler:focus {
+  outline: 0;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.navbar .navbar-nav .nav-item a.nav-link {
+  color: #020202;
+  font-weight: 400;
+  padding: 0.45rem 1.75rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-item a.nav-link.sign-up {
+  background: #0076de;
+  border: 1px solid #0076de;
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item a.nav-link.sign-up:hover {
+  background: #fff;
+  color: #0076de;
+}
+
+.navbar .navbar-nav .nav-item a.nav-link:hover:not(.sign-up) {
+  color: #0076de;
+}
+
+.navbar .navbar-collapse {
+  overflow: hidden;
+}
+
+.main .banner {
+  background: url(../../images/Banner.jpg) no-repeat center 63%;
+  background-size: cover;
+  height: 335px;
+  position: relative;
+}
+
+.main .banner .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main .banner .jumbotron {
+  background-color: transparent;
+  color: #fff;
+  max-width: 550px;
+}
+
+.main .content-container p {
+  font-size: 15.8px;
+}
+
+.main .digital-form-holder .digital-form {
+  background-color: rgba(0, 118, 222, 0.7);
+  margin-top: -335px;
+}
+
+.main .digital-form-holder .digital-form .form-header {
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.main .digital-form-holder .digital-form .form-header .header-text {
+  color: #fff;
+}
+
+.main .digital-form-holder .digital-form .form-sub-text {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 1.75rem 0 1.5rem;
+}
+
+.main .digital-form-holder .digital-form .form-sub-text .header-text {
+  font-weight: 350;
+  color: #fff;
+}
+
+.main .digital-form-holder .digital-form .form-sub-text .header-sub-text {
+  color: #fff;
+}
+
+.main .digital-form-holder .digital-form .download-form label {
+  color: #fff;
+}
+
+.main .digital-form-holder .digital-form .download-form label.error {
+  color: #ed1c24 !important;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.main .digital-form-holder .digital-form .download-form input {
+  border-radius: 0;
+}
+
+.main .digital-form-holder .digital-form .download-form input.error {
+  border: 2px solid #ed1c24;
+}
+
+.main .digital-form-holder .digital-form .download-form .btn {
+  background-color: #41f2c9;
+  border-radius: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #0076de;
+  font-weight: 600;
+  border: 1px solid #41f2c9;
+}
+
+.main .digital-form-holder .digital-form .download-form .btn:hover {
+  border: 1px solid #0076de;
+  background-color: #fff;
+}
+
+.main .digital-form-holder .form-small-text {
+  font-size: 10px;
+  color: #fff;
+}
+
+.main .note .note-text {
+  color: #868686;
+}
+
+.footer {
+  background: #868686 !important;
+  color: #fff;
+}
+
+.footer .list-inline {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 5px;
+}
+
+.footer .list-inline .list-inline-item {
+  line-height: 1rem;
+  padding: 12px 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.footer .list-inline .list-inline-item a {
+  color: #fff;
+  padding: 0 10px;
+  margin: 0;
+  font-size: 12px;
+  border-right: 1px solid #dee2e6;
+}
+
+.footer .list-inline .list-inline-item:first-child a {
+  padding-left: 0;
+}
+
+.footer .list-inline .list-inline-item:last-child a {
+  border-right: 0;
+}
+
+.footer .footer-logo {
+  margin: 0;
+  padding: 5px;
+  display: block;
+}
+
+.footer .footer-logo img {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767.98px) {
+  .navbar .navbar-brand {
+    margin-left: 1rem;
+  }
+  .main .banner .jumbotron {
+    text-align: center !important;
+  }
+  .main .banner .jumbotron.no-jumbotron {
+    display: none;
+  }
+  .footer .list-inline .list-inline-item {
+    width: 100% !important;
+    line-height: 12px;
+    padding: 0;
+  }
+  .footer .list-inline .list-inline-item a {
+    border-right: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 10px;
+  }
+  .footer .list-inline .list-inline-item:first-child {
+    margin-bottom: -15px !important;
+  }
+  .footer .list-inline .list-inline-item:first-child a {
+    padding-left: 10px;
+  }
+  .footer .list-inline .list-inline-item.copy-right {
+    margin-top: 10px;
+    width: 55% !important;
+    float: left;
+  }
+  .footer .list-inline .list-inline-item.copy-right a {
+    padding-right: 2px;
+  }
+  .footer .list-inline .list-inline-item.all-rights {
+    margin-top: 10px;
+    width: 45% !important;
+  }
+  .footer .list-inline .list-inline-item.all-rights a {
+    padding: 0;
+  }
+  .footer .footer-logo {
+    margin-bottom: 15px;
+  }
+  .footer .footer-logo img {
+    height: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar .container {
+    max-width: 100%;
+  }
+  .navbar .navbar-brand {
+    margin-left: 1.5rem;
+  }
+  .navbar .navbar-nav .nav-item {
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #fff;
+  }
+  .navbar .navbar-nav .nav-item a.nav-link {
+    padding: 20px 15px;
+  }
+  .navbar .navbar-nav .nav-item a.nav-link.sign-up {
+    background: transparent;
+    border: none;
+    color: #0076de;
+    font-weight: 500;
+  }
+  .navbar .navbar-nav .nav-item a.nav-link.sign-up:hover {
+    background: transparent;
+    color: #0076de;
+  }
+  .navbar .navbar-collapse {
+    transition: all .3s ease;
+    border-top: 1px solid #dedede;
+  }
+  .main .digital-form-holder .digital-form {
+    box-shadow: 0 5px 12px -6px;
+    background-color: transparent;
+    margin-top: 0px;
+  }
+  .main .digital-form-holder .digital-form .form-header {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  .main .digital-form-holder .digital-form .form-header .header-text {
+    color: #020202;
+    font-size: 1.25rem;
+  }
+  .main .digital-form-holder .digital-form .form-sub-text {
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0;
+  }
+  .main .digital-form-holder .digital-form .form-sub-text .header-text {
+    font-weight: 500;
+    color: #020202;
+    font-size: 1.75rem;
+  }
+  .main .digital-form-holder .digital-form .form-sub-text .header-sub-text {
+    color: #020202;
+    font-size: 1.20rem;
+  }
+  .main .digital-form-holder .digital-form .download-form label {
+    color: #020202;
+  }
+  .main .digital-form-holder .digital-form .download-form .form-text {
+    font-weight: 400;
+  }
+  .main .digital-form-holder .digital-form .download-form .form-text.text-danger {
+    color: #ed1c24 !important;
+  }
+  .main .digital-form-holder .digital-form .download-form .btn {
+    background-color: #0076de;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+  }
+  .main .digital-form-holder .digital-form .download-form .btn:hover {
+    border: 1px solid #0076de;
+    color: #0076de;
+  }
+  .main .digital-form-holder .form-small-text {
+    font-size: 12px;
+    color: #020202;
+  }
+  .main .digital-form-holder .form-small-text .text-white {
+    color: #020202 !important;
+  }
+}
+/*# sourceMappingURL=app.css.map */

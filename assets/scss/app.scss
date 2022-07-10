@@ -1,0 +1,13 @@
+// VARIABLES
+$color-grey:#868686;
+$color-blue:#0076de;
+$color-danger:#ed1c24;
+
+$text-light:#fff;
+$text-dark:#020202;
+
+$bg-gray:$color-grey;
+$bg-blue:$color-blue;
+
+@import 'content';
+@import 'media';

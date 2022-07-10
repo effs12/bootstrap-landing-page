@@ -1,0 +1,183 @@
+@media (max-width: 767.98px) { 
+    .navbar{
+        .navbar-brand{
+            margin-left:1rem;
+        }
+    }
+
+    .main{
+        .banner{
+            .jumbotron{
+                text-align: center !important;
+                &.no-jumbotron{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footer{
+        .list-inline{
+            .list-inline-item{
+                width: 100% !important;
+                line-height: 12px;
+                padding:0;
+
+                a{
+                    border-right:0 !important;
+                    padding-top:0;
+                    padding-bottom:0;
+                    text-align: center;
+                    font-size: 10px;
+                }
+
+                &:first-child{
+                    margin-bottom: -15px !important;
+                    a{
+                        padding-left:10px;
+                    }
+                }
+
+                &.copy-right{
+                    margin-top:10px;
+                    width: 55% !important;
+                    float:left;
+
+                    a{
+                        padding-right:2px;
+                    }
+                }
+
+                &.all-rights{
+                    margin-top:10px;
+                    width: 45% !important;
+                    a{
+                        padding:0;
+                    }
+                }
+            }
+        }
+
+        .footer-logo{
+            margin-bottom:15px;
+
+            img{
+                height: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991.98px) {
+
+    .navbar{
+        .container{
+            max-width: 100%;
+        }
+
+        .navbar-brand{
+            margin-left:1.5rem;
+        }
+        .navbar-nav{
+            .nav-item{
+                border-bottom: 1px solid #d3d3d3;
+                border-top: 1px solid #fff;
+
+                a.nav-link{
+                    padding: 20px 15px;
+
+                    &.sign-up{
+                        background:transparent;
+                        border:none;
+                        color:$color-blue;
+                        font-weight: 500;
+    
+                        &:hover{
+                            background:transparent;
+                            color:$color-blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse{
+            transition: all .3s ease;
+            border-top:1px solid #dedede;
+          }
+    }
+
+    .main{
+        .digital-form-holder{
+            .digital-form{
+                box-shadow: 0 5px 12px -6px;
+                background-color:transparent;
+                margin-top: 0px;
+
+                .form-header{
+                    padding-top:1rem;
+                    padding-bottom:0;
+    
+                    .header-text{
+                        color:$text-dark;
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .form-sub-text{
+                    border-top:0;
+                    border-bottom:0;
+                    padding:0;
+    
+                    .header-text{
+                        font-weight: 500;
+                        color:$text-dark;
+                        font-size: 1.75rem;
+                    }
+    
+                    .header-sub-text{
+                        color:$text-dark;
+                        font-size: 1.20rem;
+                    }
+                }
+
+                .download-form{
+                    label{
+                        color:$text-dark;
+                    }
+    
+                    .form-text{
+                        font-weight:400;
+    
+                        &.text-danger{
+                            color:$color-danger !important;
+                        }
+                    }
+    
+                    .btn{
+                        background-color: #0076de;
+                        padding-top:10px;
+                        padding-bottom:10px;
+                        color:$text-light;
+
+                        
+                        &:hover{
+                            border:1px solid #0076de;
+                            color:#0076de;
+                        }
+                    }
+                }
+            }
+
+            .form-small-text{
+                font-size: 12px;
+                color:$text-dark;
+
+                .text-white{
+                    color: $text-dark !important;
+                }
+            }
+        }
+    }
+}
